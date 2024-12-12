@@ -1,9 +1,15 @@
+'''
+Author: wds-Ubuntu22-cqu wdsnpshy@163.com
+Date: 2024-12-12 16:42:59
+Description: 
+邮箱：wdsnpshy@163.com 
+Copyright (c) 2024 by ${wds-Ubuntu22-cqu}, All Rights Reserved. 
+'''
 import os
 from openai import OpenAI
 
-api_key = os.getenv("OPENAI_API_KEY")
-print(api_key)
-client = OpenAI(api_key=api_key, base_url="https://api.chatanywhere.tech")
+
+client = OpenAI(api_key="sk-PLvmgppR3434WqQI5vo0wgxB9FkFwzwXuomR3dFQnO7H2cp1", base_url="https://api.chatanywhere.tech")
 
 completion = client.chat.completions.create(
     model="gpt-4o-mini",
